@@ -2429,7 +2429,10 @@ a{
 }
 
 .project-image{
-  max-width: 800px;
+  max-width: 600px;
+  cursor: pointer;
+  border: 1px solid black;
+  margin-bottom: 20px;
 }
 .project-text{
 max-width: 600px;
@@ -2456,4 +2459,30 @@ text-align: center;
 }
 .backtohome:hover{
   color: darkgrey;
+}
+
+.project-title{
+  max-width: 600px;
+  display: block;
+  margin: 0px auto 0;
+}
+
+.project-header{
+  padding: 30px 45px !important;
+
+}
+
+.project-header .header-content{
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-backdrop.in{
+  opacity: .7;
+}
+
+.modal-xl{
+width: 95%;
+max-width: 1300px;
 }
