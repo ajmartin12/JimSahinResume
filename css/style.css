@@ -2433,6 +2433,8 @@ a{
   cursor: pointer;
   border: 1px solid black;
   margin-bottom: 20px;
+  display: block;
+
 }
 .project-text{
 max-width: 600px;
@@ -2485,4 +2487,45 @@ text-align: center;
 .modal-xl{
 width: 95%;
 max-width: 1300px;
+}
+
+.project-slider{
+  max-width: 1400px;
+  margin: 30px auto 0;
+  border: 3px solid #0082d6;
+  padding: 10px;
+  background: #f5f5f5;
+}
+
+.slider-nav{
+  width: 400px;
+  margin: 10px auto 0;
+  display: block;
+}
+
+.slick-slide{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*.project-image-multi{
+  top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+position: absolute;
+}*/
+
+.slick-arrow{
+background: #0082d6 !important;
+color: black !important;
+display: block !important;
+width: 40px !important;
+height: 40px !important;
+}
+
+@media only screen and (min-width: 992px) {
+.project-slider img {
+  width: auto;
+  margin: 0 auto; /* it centers any block level element */
+}
 }
