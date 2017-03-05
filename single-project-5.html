@@ -10,15 +10,6 @@
     <meta name="keywords" content="resume bootstrap template, resume / cv html template, html5 / css3 resume" />
     <meta name="author" content="KingStudio.ro">
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.shuffle.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="./js/slick.min.js"></script>
-
-
     <!-- favicon -->
     <link rel="icon" href="images/favicon.png">
     <!-- page title -->
@@ -79,7 +70,7 @@
                     <a class="menu-item page-scroll" href="index.html#internships">Internships</a>
                 </li>
                 <li>
-                    <a class="menu-item page-scroll" href="index.html#portfolio">Portfolio</a>
+                    <a class="menu-item page-scroll" href="index.html#portfolio">Projects</a>
                 </li>
                 <li>
                     <a class="menu-item page-scroll" href="index.html#references">References</a>
@@ -111,12 +102,26 @@
                 <a href="index.html#menu-toggle" id="menu-toggle"><i class="lnr lnr-menu"></i></a>
                 <header id="home" class="project-header">
                     <div class="header-content">
-                        <h2>I am <span class="nameInMenu">Jim Sahin</span></h2>
+                        <h2> <span class="nameInMenu">Jim Sahin</span></h2>
                         <h5>Geomatics Engineer</h5>
                     </div>
                 </header>
 
-                <div class="overlay"></div>
+                <div class="overlay2"></div>
+
+
+                                                <section class="project-nav__container">
+
+                                                    <div class="project-nav">
+                                                        <a href="./single-project-4.html">
+                                                          <div><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</div></a>
+
+                                                    </div>
+                                                    <div class="project-nav project-number">5 of 10</div>
+                                                    <div class="project-nav">
+                                                        <a href="./single-project-6.html"><div>Next <i class="fa fa-arrow-right" aria-hidden="true"></i></div></a>
+                                                    </div>
+                                                </section>
 
 
 
@@ -124,9 +129,10 @@
 
   <div class="page-header space-left">
       <div class="row">
-          <h3 class="project-title">
-While working as a GIS analyst, worked and used several GIS, LiDAR data sets and created online maps.</h3>
+          <h3 class="project-title">GIS Analyst</h3>
           <p class="project-text">
+            While working as a GIS analyst, worked and used several GIS, LiDAR data sets and created online maps.
+
           </p>
       </div>
       </div>
@@ -192,7 +198,6 @@ While working as a GIS analyst, worked and used several GIS, LiDAR data sets and
                 <section id="blog">
                     <div class="container">
 
-                            <hr>
                             <div class="share">
                                 <a href="single-project.html#" class="btn-social btn-facebook-filled"><i class="fa fa-facebook"></i> <span>Share</span></a>
                                 <a href="single-project.html#" class="btn-social btn-twitter-filled"><i class="fa fa-twitter"></i> <span>Tweet</span></a>
@@ -311,22 +316,20 @@ While working as a GIS analyst, worked and used several GIS, LiDAR data sets and
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.shuffle.min.js"></script>
     <script src="js/custom.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="./js/slick.min.js"></script>
 
 
     <!-- menu toggle script -->
     <script>
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-            $(".overlay").css("display", "block");
-        });
-        $(".overlay, .menu-item").click(function() {
-            $("#wrapper").removeClass("toggled");
-            $(".overlay").css("display", "none");
-        });
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        $(".overlay2").css("display","block");
+    });
+    $(".overlay2, .menu-item").click(function() {
+      $("#wrapper").removeClass("toggled");
+      $(".overlay2").css("display","none");
+    });
     </script>
     <!-- / menu toggle script -->
 

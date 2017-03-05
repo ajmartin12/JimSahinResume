@@ -2418,7 +2418,7 @@ a{
   display: none !important;
 }
 
-.overlay{
+.overlay2{
   width: 100%;
   height: 100%;
   display: none;
@@ -2431,7 +2431,7 @@ a{
 .project-image{
   max-width: 600px;
   cursor: pointer;
-  border: 1px solid black;
+  border: 2px solid #0082d6;
   margin-bottom: 20px;
   display: block;
 
@@ -2501,9 +2501,12 @@ max-width: 1300px;
   width: 400px;
   margin: 10px auto 0;
   display: block;
+  height: 65px;
+  border-left: 2px solid #0082d6;
+  border-right: 2px solid #0082d6;
 }
 
-.slick-slide{
+.slider-nav .slick-slide{
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -2515,7 +2518,7 @@ transform: translate(-50%, -50%);
 position: absolute;
 }*/
 
-.slick-arrow{
+.project-slider .slick-arrow{
 background: #0082d6 !important;
 color: black !important;
 display: block !important;
@@ -2528,4 +2531,65 @@ height: 40px !important;
   width: auto;
   margin: 0 auto; /* it centers any block level element */
 }
+}
+
+.project-nav__container{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+      padding: 25px 15px 0;
+}
+
+.project-nav{
+  display: inline-block;
+  width: 30%;
+  position: relative;
+  max-width: 190px;
+}
+
+
+.project-nav a{
+  display: block;
+  border: 1px solid #0082d6;
+  height: 50px;
+  position: relative;
+
+}
+
+.project-nav a:hover{
+background: #0082d6;
+color: white;
+
+}
+
+.project-nav a div{
+
+  position: absolute;
+  top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+}
+
+.project-number{
+  vertical-align: middle;
+    height: 50px;
+    color: #0082d6;
+}
+
+.white{
+  color: white;
+}
+
+.share{
+  display: none;
+}
+
+
+.project img{
+  border: 1px solid #0082d6;
+}
+
+#portfolio .project {
+
 }

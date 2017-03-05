@@ -70,7 +70,7 @@
                     <a class="menu-item page-scroll" href="index.html#internships">Internships</a>
                 </li>
                 <li>
-                    <a class="menu-item page-scroll" href="index.html#portfolio">Portfolio</a>
+                    <a class="menu-item page-scroll" href="index.html#portfolio">Projects</a>
                 </li>
                 <li>
                     <a class="menu-item page-scroll" href="index.html#references">References</a>
@@ -102,13 +102,28 @@
                 <a href="index.html#menu-toggle" id="menu-toggle"><i class="lnr lnr-menu"></i></a>
                 <header id="home" class="project-header">
                     <div class="header-content">
-                        <h2>I am <span class="nameInMenu">Jim Sahin</span></h2>
+                        <h2> <span class="nameInMenu">Jim Sahin</span></h2>
                         <h5>Geomatics Engineer</h5>
-                        
+
                     </div>
                 </header>
 
-                <div class="overlay"></div>
+                <div class="overlay2"></div>
+
+
+                                <section class="project-nav__container">
+
+                                    <div class="project-nav">
+                                        <a href="./single-project-2.html">
+                                          <div><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</div></a>
+
+                                    </div>
+                                    <div class="project-nav project-number">3 of 10</div>
+                                    <div class="project-nav">
+                                        <a href="./single-project-4.html"><div>Next <i class="fa fa-arrow-right" aria-hidden="true"></i></div></a>
+                                    </div>
+                                </section>
+
 
 
 
@@ -138,7 +153,6 @@ While working as a sales engineer at the one of the biggest remote sensing solut
 
                             </div>
 
-                            <hr>
                             <div class="share">
                                 <a href="single-project.html#" class="btn-social btn-facebook-filled"><i class="fa fa-facebook"></i> <span>Share</span></a>
                                 <a href="single-project.html#" class="btn-social btn-twitter-filled"><i class="fa fa-twitter"></i> <span>Tweet</span></a>
@@ -263,15 +277,15 @@ While working as a sales engineer at the one of the biggest remote sensing solut
 
     <!-- menu toggle script -->
     <script>
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-            $(".overlay").css("display", "block");
-        });
-        $(".overlay, .menu-item").click(function() {
-            $("#wrapper").removeClass("toggled");
-            $(".overlay").css("display", "none");
-        });
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        $(".overlay2").css("display","block");
+    });
+    $(".overlay2, .menu-item").click(function() {
+      $("#wrapper").removeClass("toggled");
+      $(".overlay2").css("display","none");
+    });
     </script>
     <!-- / menu toggle script -->
 
@@ -317,48 +331,6 @@ While working as a sales engineer at the one of the biggest remote sensing solut
     <script src="js/hide-nav.js"></script>
 
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-
-            $('.carousel').slick({
-                dots: true,
-
-                infinite: false,
-                speed: 800,
-                autoplay: true,
-                autoplaySpeed: 1200,
-                infinite: true,
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                responsive: [{
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3
-                        }
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2
-                        }
-                    }
-                    // You can unslick at a given breakpoint now by adding:
-                    // settings: "unslick"
-                    // instead of a settings object
-                ]
-            });
-        });
-    </script>
-    <!-- / hide nav -->
 
     <!-- / javascript -->
 </body>
