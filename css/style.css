@@ -1490,7 +1490,9 @@ input:focus {
   display: none;
   font-size: 35px;
   z-index: 1001;
-  color: #8fd3ff;
+  color: black;
+  border-radius: 7px;
+  background: white;
 }
 
 .menu-footer {
@@ -2592,4 +2594,22 @@ transform: translate(-50%, -50%);
 
 #portfolio .project {
 
+}
+.menu-title{
+  position: absolute;
+  top: -5px;
+      left: 8px;
+  font-size: 10px;
+}
+
+.job-logos{
+  width: 50px;
+  text-align: left;
+  display: block;
+  margin: 0;
+  margin-left: 5px;
+}
+
+.timeline-role{
+  display: inline-block;
 }
