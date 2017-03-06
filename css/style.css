@@ -2613,3 +2613,7 @@ transform: translate(-50%, -50%);
 .timeline-role{
   display: inline-block;
 }
+
+.no-bold li{
+  font-weight: normal;
+}
